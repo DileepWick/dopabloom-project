@@ -1,0 +1,608 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Navigation -->
+
+
+    <!--Navigation-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="361dp"
+        android:layout_height="258dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poind32d32tsIcon">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:fontFamily="@font/ralewaybold"
+            android:text="@string/quote"
+            android:textColor="@color/black"
+            android:textSize="33sp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="206dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/quote" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="358dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/input_area"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="209dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ralewaybold"
+                android:text="Digital Sunrise"
+                android:textColor="@color/calm_blue"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/popbold"
+                android:text="Progress 0/5"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="155dp"
+                android:layout_height="35dp"
+                android:fontFamily="@font/ralewaybold"
+                android:text="@string/_4_weeks_streak"
+                android:textColor="@color/calm_blue"
+                android:textSize="17sp"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="192dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/prm" />
+
+        <LinearLayout
+            android:layout_width="161dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="407dp"
+        android:layout_height="63dp"
+        android:background="@color/input_area"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Home -->
+        <LinearLayout
+            android:id="@+id/home_button_icon"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/homeico"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="771dp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/popbold"
+                android:gravity="center_horizontal"
+                android:text="@string/home"
+                android:textColor="@color/calm_blue"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/programs_button_icon"
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView14323"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/offpln"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="771dp" />
+
+            <TextView
+                android:id="@+id/textView13546"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/popbold"
+                android:gravity="center_horizontal"
+                android:text="@string/programs"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- Challenges -->
+        <LinearLayout
+            android:id="@+id/challenges_button_icon"
+            android:layout_width="106dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView176"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/offchlnges"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="771dp" />
+
+            <TextView
+                android:id="@+id/textView139"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/popbold"
+                android:gravity="center_horizontal"
+                android:text="@string/challenges"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- Profile -->
+        <LinearLayout
+            android:id="@+id/profile_button_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView138"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/offprofile"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="771dp" />
+
+            <TextView
+                android:id="@+id/textView137"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/popbold"
+                android:gravity="center_horizontal"
+                android:text="@string/profile"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="367dp"
+        android:layout_height="262dp"
+        android:background="@color/white"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.534">
+
+        <!-- LinearLayout to stack each day's to-do list -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_designer"
+            android:orientation="vertical">
+
+            <!-- Day 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="229dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/popbold"
+                        android:text="Day 01 - Mindful Monday"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Start your day screen-free. Esada" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/popbold"
+                            android:text="1 point"
+                            android:textColor="@color/calm_blue" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView6sad32542354d3weqe2"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/d1" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="TouchTargetSizeCheck"
+                        android:buttonTint="@drawable/checkbox_color"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- Day 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="229dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView17321321"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/popbold"
+                        android:text="Day 02 - Tranquil Tuesday"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textView1823123"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reduce_screen_time_by_50" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView22123123"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/popbold"
+                            android:text="1 point"
+                            android:textColor="@color/calm_blue" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView193213"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imag44446sad3weqe2"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/d2" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox33213"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="TouchTargetSizeCheck"
+                        android:buttonTint="@drawable/checkbox_color"/>
+                </LinearLayout>
+            </LinearLayout> <!--Day 4 end -->
+            <!-- Day 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="229dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textVied3232dw17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/popbold"
+                        android:text="Day 03 - Wellness Wednesday"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textVd3232iew18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reduce_screen_time_by_50" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewd3232d22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/popbold"
+                            android:text="1 point"
+                            android:textColor="@color/calm_blue" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView1d32329"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image32432sad3244sad3weqe2"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/d3" />
+
+                    <CheckBox
+                        android:id="@+id/checkBd32dox3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="TouchTargetSizeCheck"
+                        android:buttonTint="@drawable/checkbox_color"/>
+                </LinearLayout>
+            </LinearLayout> <!--day 5 end -->
+            <!-- Day 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="229dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:ignore="TextSizeCheck,TextSizeCheck">
+
+                    <TextView
+                        android:id="@+id/textVid3232ew17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/popbold"
+                        android:text="Day 04 - Thoughtful Thursday"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textVid322dew18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reduce_screen_time_by_50" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textVied322w22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/popbold"
+                            android:text="1 point"
+                            android:textColor="@color/calm_blue" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textVid3232ew19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image325dsfs3weqe2"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/d4" />
+
+                    <CheckBox
+                        android:id="@+id/checkBd323ox3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:ignore="TouchTargetSizeCheck"
+                        android:buttonTint="@drawable/checkbox_color"/>
+                </LinearLayout>
+            </LinearLayout> <!--day 6 end -->
+            <!-- Day 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="229dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView1d23d7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/popbold"
+                        android:text="Day 05 - Focused Friday"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textView18d32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reduce_screen_time_by_50" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView2dasd2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/popbold"
+                            android:text="1 point"
+                            android:textColor="@color/calm_blue" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView19231"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView6sad32"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/d5" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox3dasdas"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@drawable/checkbox_color"/>
+                </LinearLayout>
+            </LinearLayout> <!--day 7 end -->
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/challenged32d2332dPoints1"
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="336dp"
+        android:fontFamily="@font/ralewaybold"
+        android:text="26"
+        android:textColor="@color/calm_blue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <ImageView
+        android:id="@+id/poind32d32tsIcon"
+        android:layout_width="39dp"
+        android:layout_height="34dp"
+        android:src="@drawable/point"
+        app:layout_constraintStart_toEndOf="@+id/challenged32d2332dPoints1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="26dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

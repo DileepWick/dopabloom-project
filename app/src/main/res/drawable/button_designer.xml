@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color -->
+    <solid android:color="#FFFFFF"/> <!-- White background -->
+
+    <!-- Border -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/input_area"/>
+    <!-- Corner radius -->
+    <corners android:radius="5dp"/> <!-- Calm blue border -->
+
+
+</shape>

@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sdasda"
+        android:label="DopaBloom"
+        android:roundIcon="@drawable/sdasda"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DopaBloomProject">
+
+        <!-- Main activity with intent filter for launcher -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Second activity without intent filter, not accessible from outside -->
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false" />
+
+        <activity android:name=".ThirdActivity" />
+        <activity android:name=".LoginAndSignup" />
+        <activity android:name=".Login"/>
+        <activity android:name=".Signup"/>
+
+        <!--Main Pages-->
+        <activity android:name=".Home" />
+        <activity android:name=".Programs"/>
+        <activity android:name=".Challenges"/>
+        <activity android:name=".Profile"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Title Section -->
+
+    <!-- Underline/View below Title -->
+
+    <TextView
+        android:id="@+id/textViewChallenges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/ralewaybold"
+        android:text="@string/dopa_challenges"
+        android:textColor="@color/calm_blue"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewChallengesUnderline"
+        android:layout_width="300dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/input_area"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewChallenges" />
+
+    <!-- Scrollable Challenges List -->
+    <ScrollView
+
+        android:id="@+id/challengesScrollView"
+        android:layout_width="408dp"
+        android:layout_height="630dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@id/viewChallengesUnderline"
+        tools:ignore="MissingConstraints,NotSibling"
+        tools:layout_editor_absoluteX="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Individual Challenge Item -->
+            <!-- Repeat this block for each challenge -->
+
+            <LinearLayout
+                android:layout_width="408dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="30dp">
+
+                <!-- Image at the Start -->
+
+                <!-- Title and Description Section -->
+
+                <ImageView
+                    android:id="@+id/challengeId32d32f32mage1"
+                    android:layout_width="144dp"
+                    android:layout_height="391dp"
+                    android:layout_marginEnd="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ch1"
+                    android:layout_gravity="start"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/challengd32d32eTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/ralewaybold"
+                        android:text="@string/digital_sunset"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/challengeDescd32d2ription1"
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/popbold"
+                        android:gravity=""
+                        android:text="@string/ch1text"
+                        android:textColor="@color/secondary_color"
+                        android:textSize="15sp" />
+
+                    <!-- Reward Points Section -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <TextView
+                            android:id="@+id/challenged32d233dasd2dPoints1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="4dp"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="Reward - 200"
+                            android:textColor="@color/calm_blue"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:id="@+id/poind32d32tsIcon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/point" />
+                    </LinearLayout>
+
+                    <!-- Number of Days Completed Section -->
+                    <TextView
+                        android:id="@+id/challengeDaysCd32d32dompleted1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/popbold"
+                        android:text="@string/days_completed_0_7"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <!-- Checkboxes for Each Day -->
+
+
+                    <!-- Reset Button -->
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:columnCount="3"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:rowCount="3">
+
+                        <CheckBox
+                            android:id="@+id/checkBoxMond32d32frday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D1"
+                            android:textColor="@color/black"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+
+                        <CheckBox
+                            android:id="@+id/checkBoxTuesd32d32day1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D2"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/checkBoxWednd32d32esday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D3"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/checkBoxThurd32d32sday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D4"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/checkBoxFrd32d32iday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:minHeight="48dp"
+                            android:text="D5" />
+
+                        <CheckBox
+                            android:id="@+id/checkBoxd32d32d32Saturday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D6"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/checkBoxS342432dunday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:minHeight="48dp"
+                            android:text="D7" />
+
+                    </GridLayout>
+
+                    <Button
+                        android:id="@+id/resetCd2332d2hallengeButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/button_designer2"
+                        android:text="@string/reset"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="408dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/todo_list"
+                android:gravity="center_vertical"
+                android:importantForAccessibility="no"
+                android:orientation="horizontal"
+                android:padding="30dp"
+
+                >
+
+                <!-- Image at the Start -->
+
+                <!-- Title and Description Section -->
+
+                <ImageView
+                    android:id="@+id/challenasdasgeId32d32f32mage1"
+                    android:layout_width="144dp"
+                    android:layout_height="391dp"
+                    android:layout_marginEnd="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/chl1" />
+
+                <LinearLayout
+                    android:layout_width="227dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    tools:ignore="InefficientWeight">
+
+                    <TextView
+                        android:id="@+id/challengddasd32d32eTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/ralewaybold"
+                        android:text="Deep Work"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/challengeDesdasdasdcd32d2ription1"
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/popbold"
+                        android:gravity=""
+                        android:text="@string/ch1text"
+                        android:textColor="@color/secondary_color"
+                        android:textSize="15sp" />
+
+                    <!-- Reward Points Section -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <TextView
+                            android:id="@+id/challenged3232d32d32d233dasd2dPoints1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="4dp"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="Reward - 200"
+                            android:textColor="@color/calm_blue"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:id="@+id/pod322diIcon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/point" />
+                    </LinearLayout>
+
+                    <!-- Number of Days Completed Section -->
+                    <TextView
+                        android:id="@+id/challen32d32dompleted1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/popbold"
+                        android:text="@string/days_completed_0_7"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <!-- Checkboxes for Each Day -->
+
+
+                    <!-- Reset Button -->
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:columnCount="3"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:rowCount="3">
+
+                        <CheckBox
+                            android:id="@+id/checkBodasdasfccvcvxMond32d32frday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D1"
+                            android:textColor="@color/black"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+
+                        <CheckBox
+                            android:id="@+id/checkBasdasdsoxTuesd32d32day1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D2"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/checasdsadkBoxWednd32d32esday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D3"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/checd322kBoxThurd32d32sday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D4"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/cheasdad32ckBoxFrd32d32iday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:minHeight="48dp"
+                            android:text="D5" />
+
+                        <CheckBox
+                            android:id="@+id/chedsadsackBoxd32d32d32Saturday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D6"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/ch3232eckBoxS342432dunday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:minHeight="48dp"
+                            android:text="D7"
+                            tools:ignore="HardcodedText" />
+
+                    </GridLayout>
+
+                    <Button
+                        android:id="@+id/resetasdasdCd2332d2hallengeButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/button_designer2"
+                        android:text="@string/reset"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="408dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="30dp">
+
+                <!-- Image at the Start -->
+
+                <!-- Title and Description Section -->
+
+                <ImageView
+                    android:id="@+id/challengeId32d3sdaasd2f32mage1"
+                    android:layout_width="144dp"
+                    android:layout_height="398dp"
+                    android:layout_marginEnd="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ch2" />
+
+                <LinearLayout
+                    android:layout_width="227dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    tools:ignore="InefficientWeight">
+
+                    <TextView
+                        android:id="@+id/challensadasdagddasd32d32eTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/ralewaybold"
+                        android:text="Creative Break"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/challend32d2geDescd32d2ription1"
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/popbold"
+                        android:gravity=""
+                        android:text="@string/ch1text"
+                        android:textColor="@color/secondary_color"
+                        android:textSize="15sp" />
+
+                    <!-- Reward Points Section -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <TextView
+                            android:id="@+id/challengdasdsad32ed32d233dasd2dPoints1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="4dp"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="Reward - 200"
+                            android:textColor="@color/calm_blue"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:id="@+id/poindd32d32232d32tsIcon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/point" />
+                    </LinearLayout>
+
+                    <!-- Number of Days Completed Section -->
+                    <TextView
+                        android:id="@+id/challeng32242eDaysCd32d32dompleted1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/popbold"
+                        android:text="@string/days_completed_0_7"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <!-- Checkboxes for Each Day -->
+
+
+                    <!-- Reset Button -->
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:columnCount="3"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:rowCount="3">
+
+                        <CheckBox
+                            android:id="@+id/checkBoadsd2xMond32d32frday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D1"
+                            android:textColor="@color/black"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+
+                        <CheckBox
+                            android:id="@+id/checkBsadasdoxTuesd32d32day1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D2"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/checkBd322oxWednd32d32esday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D3"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/chad322eckBoxThurd32d32sday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D4"
+                            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/cheasdadsackBoxFrd32d32iday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:minHeight="48dp"
+                            android:text="D5" />
+
+                        <CheckBox
+                            android:id="@+id/checkBoxd32dsdasd32d32Saturday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D6"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/checkBoasdasdxS342dsad432dunday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:minHeight="48dp"
+                            android:text="D7"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                    </GridLayout>
+
+                    <Button
+                        android:id="@+id/resetCd2332d2haldasdaslengeButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/button_designer2"
+                        android:text="@string/reset"
+                        android:textColor="@color/white"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="408dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="30dp">
+
+                <!-- Image at the Start -->
+
+                <!-- Title and Description Section -->
+
+                <ImageView
+                    android:id="@+id/challengeIddsada32d32f32mage1"
+                    android:layout_width="144dp"
+                    android:layout_height="391dp"
+                    android:layout_marginEnd="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ch4" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/challengd3sadas2d32eTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/ralewaybold"
+                        android:text="Evening Unwind"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/challend322geDescd32d2ription1"
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/popbold"
+                        android:gravity=""
+                        android:text="@string/ch1text"
+                        android:textColor="@color/secondary_color"
+                        android:textSize="15sp" />
+
+                    <!-- Reward Points Section -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <TextView
+                            android:id="@+id/challenged32ts1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="4dp"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="Reward - 200"
+                            android:textColor="@color/calm_blue"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:id="@+id/tsIcon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/point" />
+                    </LinearLayout>
+
+                    <!-- Number of Days Completed Section -->
+                    <TextView
+                        android:id="@+id/challengeDa32131ysCd32d32dompleted1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/popbold"
+                        android:text="@string/days_completed_0_7"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <!-- Checkboxes for Each Day -->
+
+
+                    <!-- Reset Button -->
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:columnCount="3"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:rowCount="3">
+
+                        <CheckBox
+                            android:id="@+id/checkBoxMond12312332d32frday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D1"
+                            android:textColor="@color/black"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+
+                        <CheckBox
+                            android:id="@+id/checkBo2321xTuesd32d32day1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D2"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/checeqweqwkBoxWednd32d32esday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D3"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/checkqew21e1BoxThurd32d32sday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D4"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/checdsadasdkBoxFrd32d32iday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:minHeight="48dp"
+                            android:text="D5" />
+
+                        <CheckBox
+                            android:id="@+id/checkasds23Boxd32d32d32Saturday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:text="D6"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/checkBod32d2xS342432dunday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_columnSpan="1"
+                            android:buttonTint="@drawable/checkbox_color"
+                            android:fontFamily="@font/ralewaybold"
+                            android:minHeight="48dp"
+                            android:text="D7" />
+
+                    </GridLayout>
+
+                    <Button
+                        android:id="@+id/resetCd2332sadasdd2hallengeButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/button_designer2"
+                        android:text="@string/reset"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <!-- Repeat similar blocks for additional challenges -->
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="407dp"
+        android:layout_height="63dp"
+        android:background="@color/input_area"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Home -->
+        <LinearLayout
+            android:id="@+id/home_button_icon"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/offhome"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="771dp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/popbold"
+                android:gravity="center_horizontal"
+                android:text="@string/home"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/programs_button_icon"
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView14323"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/offpln"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="771dp" />
+
+            <TextView
+                android:id="@+id/textView13546"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/popbold"
+                android:gravity="center_horizontal"
+                android:text="@string/programs"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- Challenges -->
+        <LinearLayout
+            android:id="@+id/challenges_button_icon"
+            android:layout_width="106dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView176"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/point"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="771dp" />
+
+            <TextView
+                android:id="@+id/textView139"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/popbold"
+                android:gravity="center_horizontal"
+                android:text="@string/challenges"
+                android:textColor="@color/calm_blue"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- Profile -->
+        <LinearLayout
+            android:id="@+id/profile_button_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView138"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/offprofile"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="771dp" />
+
+            <TextView
+                android:id="@+id/textView137"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/popbold"
+                android:gravity="center_horizontal"
+                android:text="@string/profile"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/challenged32d2332dPoints1"
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="336dp"
+        android:fontFamily="@font/ralewaybold"
+        android:text="26"
+        android:textColor="@color/calm_blue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <ImageView
+        android:id="@+id/poind32d32tsIdad3224con"
+        android:layout_width="39dp"
+        android:layout_height="34dp"
+        android:src="@drawable/point"
+        app:layout_constraintStart_toEndOf="@+id/challenged32d2332dPoints1"
+        tools:layout_editor_absoluteY="10dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
