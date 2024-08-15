@@ -37,7 +37,7 @@
         android:textColor="@color/black"
         android:textSize="30dp"
         android:fontFamily="@font/popbold"
-        tools:ignore="TextSizeCheck" />
+        tools:ignore="SpUsage,TextSizeCheck" />
 
     <ImageView
         android:id="@+id/animatedImageView"
@@ -53,7 +53,8 @@
         android:layout_marginBottom="45dp"
         android:importantForAccessibility="no"
         android:scaleType="centerCrop"
-        android:src="@drawable/sdasda" />
+        android:src="@drawable/sdasda"
+        tools:ignore="UnknownId" />
 
     <Button
         android:id="@+id/go_to_second_screen_button"
@@ -66,6 +67,7 @@
         android:background="#FFFFFF"
         android:fontFamily="@font/ralewaybold"
         android:text="@string/next1st"
-        android:textColor="#6c63ff" />
+        android:textColor="#6c63ff"
+        tools:ignore="TouchTargetSizeCheck" />
 
 </RelativeLayout>

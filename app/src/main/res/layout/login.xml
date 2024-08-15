@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.218"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="ContentDescription,MissingConstraints" />
 
     <TextView
         android:id="@+id/textView3"
@@ -32,7 +32,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView"
@@ -47,37 +48,40 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="253dp"
         android:layout_height="52dp"
         android:layout_marginTop="40dp"
-        android:padding="16dp"
         android:background="@drawable/inputdesign"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:padding="16dp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="256dp"
         android:layout_height="50dp"
         android:layout_marginTop="36dp"
-        android:padding="16dp"
         android:background="@drawable/inputdesign"
         android:ems="10"
         android:gravity="clip_horizontal"
         android:inputType="textPassword"
+        android:padding="16dp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView4"
@@ -128,7 +132,8 @@
         android:layout_height="1dp"
         android:background="?android:attr/listDivider"
         tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="68dp" />
+        tools:layout_editor_absoluteY="68dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView6"
@@ -160,7 +165,8 @@
         app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/divider"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextSizeCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

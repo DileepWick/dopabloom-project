@@ -81,4 +81,13 @@
     <string name="notification">Customize how and when you receive notifications from the app, including reminders for detox activities and updates from the community.</string>
     <string name="data_backup_and_sync">Data Backup and Sync</string>
     <string name="todo_list">TODO</string>
+    <string name="digital_sunrise_text1">Digital Sunrise</string>
+    <string name="_26_poiunts">26</string>
+    <string name="dasda">1 point</string>
+    <string name="progress_0_5_bar">Progress 0/5</string>
+    <string name="day_04_thoughtful_thursday_text">Day 04 - Thoughtful Thursday</string>
+    <string name="_1_point_2">1 point</string>
+    <string name="day_05_focused_friday_text">Day 05 - Focused Friday</string>
+    <string name="_26_points2">26</string>
+    <string name="deep_work">Deep Work</string>
 </resources>

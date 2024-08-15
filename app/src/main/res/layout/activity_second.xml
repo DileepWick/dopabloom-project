@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
@@ -18,7 +19,8 @@
         android:fontFamily="@font/ralewaybold"
         android:text="@string/discover_our_features"
         android:textColor="@color/calm_blue"
-        android:textSize="28sp" />
+        android:textSize="28sp"
+        tools:ignore="TextSizeCheck" />
 
     <LinearLayout
         android:layout_width="354dp"
@@ -35,28 +37,32 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="29dp"
-            android:text="@string/detox_programs"
             android:fontFamily="@font/popbold"
+            android:text="@string/detox_programs"
             android:textColor="@color/black"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            tools:ignore="TextSizeCheck" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="121dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:layout_width="133dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/feature1" />
+                android:src="@drawable/feature1"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:layout_width="201dp"
                 android:layout_height="match_parent"
-                android:text="@string/feature1text"
-                android:textSize="18sp"
                 android:fontFamily="@font/ralewaybold"
-                android:textColor="@color/secondary_color"/>
+                android:text="@string/feature1text"
+                android:textColor="@color/secondary_color"
+                android:textSize="18sp"
+                tools:ignore="TextSizeCheck" />
 
         </LinearLayout>
 
@@ -69,28 +75,32 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="29dp"
-            android:text="@string/feature2"
             android:fontFamily="@font/popbold"
+            android:text="@string/feature2"
             android:textColor="@color/black"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            tools:ignore="TextSizeCheck" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="129dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:layout_width="137dp"
                 android:layout_height="129dp"
-                android:src="@drawable/feature2" />
+                android:src="@drawable/feature2"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:layout_width="199dp"
                 android:layout_height="match_parent"
-                android:text="@string/feature2text"
-                android:textSize="18sp"
                 android:fontFamily="@font/ralewaybold"
-                android:textColor="@color/secondary_color"/>
+                android:text="@string/feature2text"
+                android:textColor="@color/secondary_color"
+                android:textSize="18sp"
+                tools:ignore="TextSizeCheck" />
         </LinearLayout>
 
         <!-- Space between sections -->
@@ -102,28 +112,32 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="29dp"
-            android:text="@string/feature3"
             android:fontFamily="@font/popbold"
+            android:text="@string/feature3"
             android:textColor="@color/black"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            tools:ignore="TextSizeCheck" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="124dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:layout_width="134dp"
                 android:layout_height="124dp"
-                android:src="@drawable/feature3" />
+                android:src="@drawable/feature3"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="118dp"
-                android:text="@string/feature3text"
-                android:textSize="18sp"
                 android:fontFamily="@font/ralewaybold"
-                android:textColor="@color/secondary_color"/>
+                android:text="@string/feature3text"
+                android:textColor="@color/secondary_color"
+                android:textSize="18sp"
+                tools:ignore="TextSizeCheck,TextSizeCheck" />
         </LinearLayout>
 
         <!-- Space between sections -->
@@ -135,28 +149,32 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="29dp"
-            android:text="@string/track_reward"
             android:fontFamily="@font/popbold"
+            android:text="@string/track_reward"
             android:textColor="@color/black"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            tools:ignore="TextSizeCheck" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="121dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables,VisualLintBounds">
 
             <ImageView
                 android:layout_width="136dp"
                 android:layout_height="125dp"
-                android:src="@drawable/feature4" />
+                android:src="@drawable/feature4"
+                tools:ignore="ContentDescription,VisualLintBounds" />
 
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="121dp"
-                android:text="@string/feature4text"
-                android:textSize="18sp"
                 android:fontFamily="@font/ralewaybold"
-                android:textColor="@color/secondary_color"/>
+                android:text="@string/feature4text"
+                android:textColor="@color/secondary_color"
+                android:textSize="18sp"
+                tools:ignore="TextSizeCheck" />
         </LinearLayout>
 
     </LinearLayout>
@@ -172,6 +190,7 @@
         android:background="#FFFFFF"
         android:fontFamily="@font/ralewaybold"
         android:text="@string/next1st"
-        android:textColor="#6c63ff"/>
+        android:textColor="#6c63ff"
+        tools:ignore="TouchTargetSizeCheck" />
 
 </RelativeLayout>

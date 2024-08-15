@@ -39,11 +39,11 @@
         android:layout_height="31dp"
         android:layout_marginStart="336dp"
         android:fontFamily="@font/ralewaybold"
-        android:text="26"
+        android:text="@string/_26_points2"
         android:textColor="@color/calm_blue"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
+        tools:ignore="MissingConstraints,TextSizeCheck"
         tools:layout_editor_absoluteY="10dp" />
 
     <ImageView
@@ -586,14 +586,16 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:id="@+id/imageView13"
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:layout_margin="5dp"
-                android:src="@drawable/offhome" />
+                android:src="@drawable/offhome"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/textView13"
@@ -640,7 +642,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:id="@+id/imageView16"

@@ -28,7 +28,8 @@
             android:layout_width="240dp"
             android:layout_height="159dp"
             android:layout_gravity="center"
-            android:src="@drawable/profilepic" />
+            android:src="@drawable/profilepic"
+            tools:ignore="ContentDescription" />
 
         <!-- User Info -->
         <LinearLayout
@@ -46,7 +47,8 @@
                 android:gravity="center_horizontal"
                 android:text="Amali Perera"
                 android:textColor="@color/black"
-                android:textSize="23sp" />
+                android:textSize="23sp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/userEmail"
@@ -83,7 +85,8 @@
                 android:id="@+id/imageViewPersonalInfo"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:src="@drawable/st1" />
+                android:src="@drawable/st1"
+                tools:ignore="ContentDescription" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -125,7 +128,8 @@
                 android:id="@+id/imageViewAccosadad32untSettings"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:src="@drawable/st2" />
+                android:src="@drawable/st2"
+                tools:ignore="ContentDescription" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -166,7 +170,8 @@
                 android:id="@+id/imageVieasdsadad32wAccountSettings"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:src="@drawable/st3" />
+                android:src="@drawable/st3"
+                tools:ignore="ContentDescription" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -207,7 +212,8 @@
                 android:id="@+id/imageViewAccountSdasd2ettings"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:src="@drawable/st4" />
+                android:src="@drawable/st4"
+                tools:ignore="ContentDescription" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -245,7 +251,8 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DisableBaselineAlignment">
 
         <!-- Home -->
         <LinearLayout
@@ -254,14 +261,16 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:id="@+id/imageView13"
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:layout_margin="5dp"
-                android:src="@drawable/offhome" />
+                android:src="@drawable/offhome"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/textView13"
@@ -288,7 +297,8 @@
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:layout_margin="5dp"
-                android:src="@drawable/offpln" />
+                android:src="@drawable/offpln"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/textView13546"
@@ -308,14 +318,16 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:id="@+id/imageView16"
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:layout_margin="5dp"
-                android:src="@drawable/offchlnges" />
+                android:src="@drawable/offchlnges"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/textView20"
@@ -335,14 +347,16 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:id="@+id/imageView15"
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:layout_margin="5dp"
-                android:src="@drawable/onprofile" />
+                android:src="@drawable/onprofile"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/textView141"
